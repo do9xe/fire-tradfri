@@ -1,0 +1,17 @@
+[Unit]
+Description=A script to activate my tradfri lamps on alarm
+After=syslog.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+ExecStart=/usr/local/bin/fire-tradfri.py
+SyslogIdentifier=fire-tradfri
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

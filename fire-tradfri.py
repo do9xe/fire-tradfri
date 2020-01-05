@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 
 bridge_ip='Philips-hue.teapot'
 cooldownTime = 5 * 60
-refreshTime = 1
+refreshTime = 0.25
 gpioPin = 17
 
 
